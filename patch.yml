@@ -26,17 +26,17 @@
        when: ansible_distribution == "Ubuntu"
      - name: Create user
        user:
-         name: ladbam
-         comment: Ola Ladbam
+         name: michelle
+         comment: kenf michelle
      - name: Create directory
        file:
          path: /tmp/ansible-project
-         owner: ladbam
+         owner: michelle
          state: directory
          mode: "0777"
      - name : Create file
        file:
          path: /tmp/ansible-project/ansible-devops
-         owner: ladbam
+         owner: michelle
          state: touch
          mode: "0777"
